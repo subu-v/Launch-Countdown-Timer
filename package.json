@@ -1,0 +1,26 @@
+{
+  "name": "launch-countdown-timer",
+  "version": "1.0.0",
+  "description": "![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subu-v/Launch-Countdown-Timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subu-v/Launch-Countdown-Timer/issues"
+  },
+  "homepage": "https://github.com/subu-v/Launch-Countdown-Timer#readme",
+  "dependencies": {
+    "node": "^18.10.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.55.0"
+  }
+}
