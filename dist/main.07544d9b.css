@@ -1,0 +1,143 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-blue-desat: hsl(236, 21%, 26%);
+  --clr-blue-desat-shade: hsl(235, 21%, 23%);
+  --clr-blue-dark: hsl(235, 16%, 14%);
+  --clr-blue-very-dark: hsl(234, 17%, 12%);
+  --clr-blue-grayish: hsl(237, 18%, 59%);
+  --clr-red-soft: hsl(345, 95%, 68%);
+  --clr-red-soft-tint: hsl(345, 53%, 55%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+main {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+  height: 100vh;
+  background-image: url(/pattern-hills.e7fe464d.svg);
+  background-position: bottom;
+  background-color: var(--clr-blue-dark);
+}
+
+main {
+  background-image: url(/bg-stars.4fc09c35.svg);
+  background-position: center;
+  height: 70vh;
+}
+
+.timer {
+  text-align: center;
+}
+.timer__container {
+  transform: translateY(30%);
+}
+.timer__heading {
+  color: var(--clr-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  margin-bottom: 9.6rem;
+}
+.timer__countdown-container {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+}
+.timer__time-left {
+  position: relative;
+}
+.timer__time-left::after {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: hsla(235deg, 18%, 12%, 0.3);
+}
+.timer__time-left-box {
+  background-image: linear-gradient(180deg, var(--clr-blue-desat-shade) 50%, var(--clr-blue-desat) 50%);
+  box-shadow: 0 1rem 0 0 var(--clr-blue-very-dark);
+  border-radius: 10px;
+  margin-bottom: 2.4rem;
+  width: 16rem;
+  height: 14rem;
+  position: relative;
+  overflow: hidden;
+}
+.timer__time-left-box::before, .timer__time-left-box::after {
+  content: "";
+  position: absolute;
+  top: 44%;
+  border-radius: 50%;
+  background-color: var(--clr-blue-very-dark);
+  color: var(--clr-blue-very-dark);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.timer__time-left-box::before {
+  left: -4%;
+}
+.timer__time-left-box::after {
+  right: -4%;
+}
+.timer__time-left-content {
+  /* Create the gradient. */
+  background-image: linear-gradient(to bottom, var(--clr-red-soft-tint) 50%, var(--clr-red-soft) 50%);
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 8rem;
+  font-weight: 700;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.timer__time-left-desc {
+  color: var(--clr-blue-grayish);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6.4px;
+}
+.timer__social-icons-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  display: flex;
+  gap: 3.2rem;
+  transform: translateX(-50%);
+}
+.timer__social-icons {
+  transition: filter 200ms ease;
+}
+.timer__social-icons:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: invert(47%) sepia(91%) saturate(1100%) hue-rotate(311deg) brightness(102%) contrast(97%);
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
